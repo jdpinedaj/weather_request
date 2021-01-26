@@ -1,2 +1,3 @@
 # weather_request
-weather_request using dark_sky API
+Request weather data from the dark_sky API.
+The key must be obtained from the official website. 
