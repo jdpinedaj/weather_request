@@ -5,11 +5,9 @@ import pandas as pd
 
 def get_weather_data(lat, lon, time, key):
     """
-    It requests weather data from dark_sky API
-    key needs to be achieved in the website
-    It can be used the following key up to 1000 requests per day (at free)
-    
-    key = "717ab7b42cfda160f09acd77a784e0ca"
+    Request weather data from the dark_sky API.
+    The key must be obtained from the official website. 
+
     """
     lat = str(lat)
     lon = str(lon)
