@@ -21,7 +21,7 @@ def get_weather_data(lat, lon, time, key):
     data = json.loads(response.text)
     data = data['currently']
     
-    return_items = ['temperature', 'apparentTemperature', 'dewPoint', 'humidity', 'windSpeed', 'windBearing', 'cloudCover', 'uvIndex', 'visibility'] # Declaring the variables
+    return_items = ['precipIntensity', 'precipProbability', 'temperature', 'apparentTemperature', 'dewPoint', 'humidity', 'windSpeed', 'windBearing', 'cloudCover', 'uvIndex', 'visibility'] # Declaring the variables
     return_data = [data.get(item) for item in return_items]  # Helps to prevent unknown values (if doesn't found cloudCover, just puts null)
     
     return return_data
